@@ -145,7 +145,7 @@ public class OperationsController {
         ratCalcForm.setOp("/");
 
         // TODO: Fill this in with appropriate code
-	if (!checkDivideByZero(ratCalcForm)&&!bindingResult.hasErrors() && !checkDenominatorErrors(ratCalcForm)) {
+	if (!bindingResult.hasErrors() && !checkDenominatorErrors(ratCalcForm)) {
             Rational r1 = new Rational(ratCalcForm.getNum1(), ratCalcForm.getDenom1());
             Rational r2 = new Rational(ratCalcForm.getNum2(), ratCalcForm.getDenom2());
 	    
