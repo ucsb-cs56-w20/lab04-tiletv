@@ -115,7 +115,7 @@ public class OperationsController {
     @GetMapping("/multiply/results")
      public String getMultiplyResult(Model model, @Valid RatCalcForm ratCalcForm, BindingResult bindingResult) {
         logger.info("getMultiplyResult ratCalcForm=" + ratCalcForm);
-        ratCalcForm.setOp("X");
+        ratCalcForm.setOp("x");
 
         // TODO: Fill this in with appropriate code
 	 if (!bindingResult.hasErrors() && !checkDenominatorErrors(ratCalcForm)) {
